@@ -1,5 +1,8 @@
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  
   background-color: #68c5dbff;
   padding: 0;
 }
@@ -37,25 +40,29 @@ body {
 .navigation {
   display: block;
   text-align: center;
+  padding: 8px;
 }
 
 .links-list {
   padding: 0;
 }
 
+a {
+  font-weight: bold;
+  color: #02182bff;
+  border: 1px solid #eee;
+  background-color: #68c5dbff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 8px;
+}
+
 .links {
   display: inline-block;
   list-style: none;
-  padding: 8px 16px;
-  margin: 8px 0;
-  border: 1px solid #eee;
-  background-color: #68c5dbff;
-  font-weight: bold;
-  color: #02182bff;
-  text-decoration: none;
 }
 
-.links:hover {
+a:hover {
   background-color: #448fa3ff;
   color: #eee;
   text-decoration: none;
